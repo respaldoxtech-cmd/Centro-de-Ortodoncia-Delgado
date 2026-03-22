@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEO Delgado Odontología | Especialistas en Sonrisas Premium</title>
+  <meta name="description" content="En CEO Delgado Odontología transformamos vidas a través de la salud dental con tecnología de vanguardia y un equipo de profesionales apasionados.">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header/Navigation -->
+    <header id="header">
+      <div class="container nav-container">
+        <nav>
+          <div class="logo-container">
+            <img src="/logo.png" alt="CEO Delgado Logo" style="height: 45px; object-fit: contain;">
+          </div>
+          
+          <ul class="nav-links">
+            <li class="has-dropdown">
+              <span class="nav-link">Servicios ↓</span>
+              <ul class="dropdown">
+                <li><a href="#services">Ortodoncia</a></li>
+                <li><a href="#services">Implantología</a></li>
+                <li><a href="#services">Estética Dental</a></li>
+                <li><a href="#services">Odontopediatría</a></li>
+              </ul>
+            </li>
+            <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+            <li><a href="#testimonials" class="nav-link">Casos de Éxito</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li>
+          </ul>
+          
+          <button class="btn-primary" onclick="window.location.href='#contact'">Agendar Cita</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="section-tag">Innovación en Dental</span>
+            <h1 class="hero-title">Tu mejor <br> <span style="color: #00a3ff;">Versión</span> <br>comienza hoy.</h1>
+            <p class="hero-subtitle">En CEO Delgado Odontología, fusionamos ciencia y estética para brindarte una experiencia dental sin precedentes.</p>
+            <div class="hero-btns">
+              <button class="btn-primary">Ver Agenda</button>
+              <button class="btn-secondary">Nuestros Casos</button>
+            </div>
+            
+            <div style="margin-top: 3rem; display: flex; align-items: center; gap: 1rem; color: #666;">
+                <div style="display: flex;">
+                    <img src="https://i.pravatar.cc/40?img=1" style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid white;">
+                    <img src="https://i.pravatar.cc/40?img=2" style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid white; margin-left: -10px;">
+                    <img src="https://i.pravatar.cc/40?img=3" style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid white; margin-left: -10px;">
+                </div>
+                <span style="font-size: 0.85rem; font-weight: 500;">+500 pacientes nos eligen cada mes</span>
+            </div>
+          </div>
+          
+          <div class="hero-3d-container">
+            <video autoplay loop muted playsinline id="hero-video" style="width: 100%; height: auto; z-index: 5;">
+                <source src="/diente-3d.mp4" type="video/mp4">
+                Su navegador no soporta el tag de video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="container">
+        <div style="text-align: center; margin-bottom: 5rem;">
+          <span class="section-tag">Nuestras Especialidades</span>
+          <h2 class="section-title">Especialistas en darte seguridad</h2>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><span data-lucide="sparkles"></span></div>
+            <h3>Diseño de Sonrisa</h3>
+            <p>Utilizamos tecnología CAD/CAM para crear una sonrisa armoniosa que encaje perfectamente con tus rasgos faciales.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><span data-lucide="shield-check"></span></div>
+            <h3>Implantes Digitales</h3>
+            <p>Cirugía guiada por computadora para una colocación de implantes más precisa, rápida y sin dolor.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><span data-lucide="smile"></span></div>
+            <h3>Invisalign® Platinum</h3>
+            <p>Ortodoncia invisible con el respaldo de los expertos en alineación dental más discretos del mercado.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision Section -->
+      <section id="about" class="container vision-section">
+        <div class="vision-image">
+          <img src="/hero.png" alt="Clínica CEO Delgado" style="box-shadow: 0 40px 80px rgba(0,163,255,0.1);">
+        </div>
+        <div class="vision-content">
+          <span class="section-tag">Nuestra Misión</span>
+          <h2 class="section-title">Ciencia al servicio de tu sonrisa</h2>
+          <p style="font-size: 1.15rem; color: #666; margin-bottom: 2rem; line-height: 1.8;">
+            En CEO Delgado Odontología, nos alejamos del concepto tradicional de clínica dental. Hemos construido un santuario del cuidado bucal donde el confort del paciente es tan importante como la precisión clínica.
+          </p>
+          <ul style="margin-bottom: 3rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+            <li style="display: flex; align-items: center; gap: 0.5rem; font-weight: 500; font-size: 0.9rem;">
+                <span style="color: #00a3ff;">✓</span> Equipos Premium
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; font-weight: 500; font-size: 0.9rem;">
+                <span style="color: #00a3ff;">✓</span> Sedación Consciente
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; font-weight: 500; font-size: 0.9rem;">
+                <span style="color: #00a3ff;">✓</span> Garantía de por Vida
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; font-weight: 500; font-size: 0.9rem;">
+                <span style="color: #00a3ff;">✓</span> Parking Privado
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <h4 class="outfit">15+</h4>
+            <p>Años de Experiencia</p>
+          </div>
+          <div class="stat-item">
+            <h4 class="outfit">5000+</h4>
+            <p>Pacientes Felices</p>
+          </div>
+          <div class="stat-item">
+            <h4 class="outfit">12</h4>
+            <p>Especialistas</p>
+          </div>
+          <div class="stat-item">
+            <h4 class="outfit">100%</h4>
+            <p>Garantía de Calidad</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="container" style="display: flex; flex-direction: column; align-items: center;">
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <span class="section-tag">Agenda tu Cita</span>
+            <h2 class="section-title">El primer paso es el más fácil</h2>
+            <p style="color: #666; max-width: 600px; margin: 0 auto;">Déjanos tus datos y un especialista se pondrá en contacto contigo para agendar tu primera valoración sin costo.</p>
+        </div>
+        
+        <form style="width: 100%; max-width: 800px; background: var(--blue-soft); padding: 4rem; border-radius: 32px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <label style="font-weight: 600; font-size: 0.9rem;">Nombre Completo</label>
+                <input type="text" placeholder="Ej. Juan Pérez" style="padding: 1rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.1); outline: none;">
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <label style="font-weight: 600; font-size: 0.9rem;">Teléfono</label>
+                <input type="tel" placeholder="+1 234 567 890" style="padding: 1rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.1); outline: none;">
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; grid-column: span 2;">
+                <label style="font-weight: 600; font-size: 0.9rem;">¿En qué tratamiento estás interesado?</label>
+                <select style="padding: 1rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.1); outline: none; background: white;">
+                    <option>Estética Dental</option>
+                    <option>Ortodoncia / Invisalign</option>
+                    <option>Implantología</option>
+                    <option>Limpieza / Preventivo</option>
+                </select>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; grid-column: span 2;">
+                <label style="font-weight: 600; font-size: 0.9rem;">Mensaje (Opcional)</label>
+                <textarea rows="4" style="padding: 1rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.1); outline: none; resize: none;"></textarea>
+            </div>
+            <button class="btn-primary" style="grid-column: span 2; padding: 1.25rem;">Enviar Solicitud</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="logo-container" style="display: inline-flex; margin-bottom: 1.5rem;">
+                <img src="/logo.png" alt="CEO Delgado Logo" style="height: 40px; object-fit: contain;">
+            </div>
+            <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Comprometidos con la excelencia dental y la satisfacción de nuestros pacientes a través de innovación constante.</p>
+            <div style="display: flex; gap: 1rem;">
+                <div style="width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #333;" data-lucide="instagram"></div>
+                <div style="width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #333;" data-lucide="facebook"></div>
+                <div style="width: 40px; height: 40px; background: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #333;" data-lucide="linkedin"></div>
+            </div>
+        </div>
+        <div class="footer-col">
+          <h4>Tratamientos</h4>
+          <ul class="footer-links">
+            <li><a href="#">Carillas Dentales</a></li>
+            <li><a href="#">Diseño de Sonrisa</a></li>
+            <li><a href="#">Implantes</a></li>
+            <li><a href="#">Ortodoncia Invisible</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul class="footer-links">
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Blog Dental</a></li>
+            <li><a href="#">Soporte</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Ubicación</h4>
+          <p style="color: #666; font-size: 0.9rem; line-height: 1.6;">
+            Calle Principal 123, Edificio Médico<br>
+            Piso 4, Suite 402<br>
+            Santo Domingo, RD
+          </p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 CEO Delgado Odontología. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
