@@ -1,18 +1,20 @@
-import * as THREE from 'three';
-import gsap from 'gsap';
-import { createIcons, Sparkles, ShieldCheck, Smile, Stethoscope, Instagram, Facebook, Linkedin } from 'lucide';
+import * as THREE from 'https://esm.sh/three@0.160.0';
+import gsap from 'https://esm.sh/gsap@3.12.5';
+import { createIcons, Sparkles, ShieldCheck, Smile, Stethoscope, Instagram, Facebook, Linkedin } from 'https://esm.sh/lucide@0.344.0';
 
-// Initialize Lucide Icons
-createIcons({
-  icons: {
-    Sparkles,
-    ShieldCheck,
-    Smile,
-    Stethoscope,
-    Instagram,
-    Facebook,
-    Linkedin
-  }
+// Initialize Lucide Icons after the DOM is fully loaded for safety
+window.addEventListener('DOMContentLoaded', () => {
+    createIcons({
+        icons: {
+            Sparkles,
+            ShieldCheck,
+            Smile,
+            Stethoscope,
+            Instagram,
+            Facebook,
+            Linkedin
+        }
+    });
 });
 
 // Scroll Effects
